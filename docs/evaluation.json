@@ -1,0 +1,74 @@
+{
+  "backend": "offline extractive fixtures; no LLM calls",
+  "python": "3.10.12",
+  "langgraph": "1.2.22",
+  "cases": 7,
+  "routing_passes": 7,
+  "required_citation_passes": 7,
+  "limitations": "Small synthetic regression suite; no answer-accuracy, user-outcome, live-model or production-latency claim.",
+  "results": [
+    {
+      "case": "shipping",
+      "expected": "answered",
+      "actual": "answered",
+      "route_pass": true,
+      "required_citations_pass": true,
+      "attempts": 1,
+      "elapsed_ms": 72.288
+    },
+    {
+      "case": "account",
+      "expected": "answered",
+      "actual": "answered",
+      "route_pass": true,
+      "required_citations_pass": true,
+      "attempts": 1,
+      "elapsed_ms": 58.354
+    },
+    {
+      "case": "payment",
+      "expected": "answered",
+      "actual": "answered",
+      "route_pass": true,
+      "required_citations_pass": true,
+      "attempts": 1,
+      "elapsed_ms": 42.148
+    },
+    {
+      "case": "refund",
+      "expected": "needs_review",
+      "actual": "needs_review",
+      "route_pass": true,
+      "required_citations_pass": true,
+      "attempts": 1,
+      "elapsed_ms": 39.089
+    },
+    {
+      "case": "cancel",
+      "expected": "needs_review",
+      "actual": "needs_review",
+      "route_pass": true,
+      "required_citations_pass": true,
+      "attempts": 1,
+      "elapsed_ms": 41.72
+    },
+    {
+      "case": "unknown",
+      "expected": "needs_review",
+      "actual": "needs_review",
+      "route_pass": true,
+      "required_citations_pass": true,
+      "attempts": 2,
+      "elapsed_ms": 58.436
+    },
+    {
+      "case": "injection",
+      "expected": "needs_review",
+      "actual": "needs_review",
+      "route_pass": true,
+      "required_citations_pass": true,
+      "attempts": 1,
+      "elapsed_ms": 36.544
+    }
+  ]
+}
